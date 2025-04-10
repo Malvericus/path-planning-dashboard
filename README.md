@@ -8,32 +8,47 @@ This site showcases results of the agent's simulation in avoiding obstacles.
 
 # Comparative Analysis of Path Planning Algorithms: PSO, RRT, and A* in Robotic Navigation
 
-## Abstract
-Path planning is a fundamental challenge in robotics and autonomous systems, involving the computation of an optimal or feasible trajectory from a start point to a goal while avoiding obstacles. This study examines three prominent path planning algorithms—Particle Swarm Optimization (PSO), Rapidly-exploring Random Tree (RRT), and A*—highlighting their unique advantages, limitations, and real-world applicability. These algorithms are widely used in autonomous vehicles, robotic navigation, drone pathfinding, and industrial automation. A comparative analysis is essential to determine the most suitable method based on environmental complexity, computational efficiency, and optimality requirements.
+# Path Planning Algorithms Dashboard
 
-## Introduction
-Path planning is critical in robotics, enabling autonomous agents to navigate dynamic or static environments efficiently. The choice of algorithm depends on factors such as:
+![Dashboard Preview](final.png) <!-- Replace with your actual preview image -->
 
-- **Environment complexity** (static vs. dynamic obstacles)
-- **Computational efficiency** (real-time vs. offline planning)
-- **Optimality** (shortest path vs. feasible path)
-- **Dimensionality** (2D vs. 3D spaces)
+## Features
 
-Among the most widely used algorithms are **PSO (metaheuristic-based), RRT (sampling-based), and A* (search-based)**. Each has distinct strengths, making them suitable for different applications.
+| Feature | Description | Supported Algorithms |
+|---------|-------------|----------------------|
+| **Interactive Visualization** | Live demonstrations of algorithm execution | PSO, RRT, A* |
+| **Algorithm Comparison** | Side-by-side performance metrics | All three |
+| **Parameter Customization** | Adjust algorithm parameters in real-time | PSO (swarm size, iterations), RRT (step size) |
+| **Obstacle Configuration** | Create custom obstacle layouts | All environments |
+| **Path Optimization** | Visualize different optimization approaches | PSO (smooth paths), A* (shortest path) |
 
-### Significant Application: Autonomous Warehouse Robots
-A key application of path planning is in **autonomous warehouse robots** (e.g., Amazon Kiva robots). These robots must:
+| Feature | Description | Supported Algorithms |
+|---------|-------------|----------------------|
+| **3D Environment** | View path planning in 3D space | RRT (3D implementation) |
+| **Performance Metrics** | Execution time and path length display | All algorithms |
+| **Code Implementation** | View algorithm source code | Python examples provided |
+| **Export Results** | Save path visualizations | PNG/MP4 formats |
+| **Responsive Design** | Works on desktop and mobile | All components |
 
-- Navigate crowded, dynamically changing environments
-- Avoid collisions with shelves, workers, and other robots
-- Optimize paths for minimal travel time
+## Getting Started
 
-### Why Compare PSO, RRT, and A*?
-- **PSO** is useful for optimizing smooth trajectories in semi-structured environments.
-- **RRT** excels in high-dimensional spaces with many obstacles.
-- **A*** is ideal for grid-based warehouse layouts where optimality is crucial.
+### Prerequisites
+- Node.js (v16 or higher)
+- npm (v8 or higher) or yarn
+- Git (optional)
 
-A comparative analysis helps select the best algorithm based on warehouse size, obstacle density, and computational constraints.
+### Installation
+```bash
+# Clone the repository (if not already done)
+git clone https://github.com/yourusername/path-planning-dashboard.git
+cd path-planning-dashboard
+
+# Install dependencies
+npm install
+
+# Or using yarn
+yarn install 
+```
 
 ## Algorithm Overviews
 

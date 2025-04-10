@@ -103,7 +103,7 @@ path = astar_planner.plan(callback=astar_callback)`;
       <Grid container>
         <Grid item xs={12} width='100%'>
           <Paper sx={{ p: 3 }}>
-            <Typography variant="h3" gutterBottom>A* Formulas</Typography>
+            <Typography variant="h3" gutterBottom>A* Formula</Typography>
             <Typography paragraph>
               The evaluation function:
             </Typography>
